@@ -1,0 +1,32 @@
+#opac{
+    background: url("https://res.cloudinary.com/indev/image/upload/v1583271284/Assets/black-rifle-with-scope-and-brown-gig-bag-864987_1_r2f4t6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#espacio{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#login{
+    position: relative;
+}
+
+#opac:before{
+    background-color:rgba(0, 0, 0, 0.7);
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#cuerpo{
+    position: relative;
+}

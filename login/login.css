@@ -1,0 +1,45 @@
+#login{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 40px;
+}
+body{
+    background: none;
+}
+
+.labels{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h2{
+    color: white;
+    margin: auto 0;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#ingresar{
+    border: none;
+    margin: auto 0;
+    margin-top: 30px;
+}
+
+#emailHelp{
+    color: red !important;
+}
+
+#pass{
+    color: red !important;
+}
+
+#email{
+    color: white;
+}
+
+#key{
+    color: white;
+}

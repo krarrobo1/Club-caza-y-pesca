@@ -1,0 +1,45 @@
+#cuerpoCarri{
+    margin: auto;
+    background-color: white;
+    width: 70%;
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.dropItems2 {
+    width: 35%;
+    text-align: 'center';
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#primeraParte {
+    margin: 0 auto;
+    padding: 30px;
+    -webkit-box-shadow: 2px 2px 6px 1px rgba(209,209,209,1);
+    -moz-box-shadow: 2px 2px 6px 1px rgba(209,209,209,1);
+    box-shadow: 2px 2px 6px 1px rgba(209,209,209,1);
+    border-radius: 10px;
+}
+
+#segundaParte {
+    margin: 0 auto;
+    padding: 30px;
+    -webkit-box-shadow: 2px 2px 6px 1px rgba(209,209,209,1);
+    -moz-box-shadow: 2px 2px 6px 1px rgba(209,209,209,1);
+    box-shadow: 2px 2px 6px 1px rgba(209,209,209,1);
+    border-radius: 10px;
+    height: 730px;
+}
+
+.pagarff:hover {
+    
+    color: rgb(40, 167, 69);
+}
+.pagarff {
+    color: #b5b5b5;
+}
+
+.datosPer {
+    margin-bottom: 30px;
+}

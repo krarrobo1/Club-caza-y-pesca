@@ -1,0 +1,21 @@
+#socioCuerpo {
+    margin: auto;
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#headSocio {
+    padding: 40px;
+}
+
+#cuerpoSocio {
+    padding: 0px 40px 20px 40px;
+}
+
+#dragFile {
+    text-align: center;
+    border-radius: 10px;
+    border: dashed 1px rgb(206, 212, 218);
+}

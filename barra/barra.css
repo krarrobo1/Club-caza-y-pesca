@@ -1,0 +1,35 @@
+#barrera{
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#inicio{
+    width: 50px;
+    padding: 5px;
+}
+
+#carrito{
+    width: 50px;
+    margin-left: 5px;
+    padding: 5px;
+    color: red;
+}
+
+#logout{
+    width: 50px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+#tituloCaza{
+    color: grey;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#barraPrincipal{
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}

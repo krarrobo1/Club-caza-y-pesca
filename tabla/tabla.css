@@ -1,0 +1,76 @@
+#cuerposos{
+    margin: auto;
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#head{
+    display:flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gainsboro;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+#barraBuscar{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.icon2 {
+    color: black;
+    font-size: 17px;
+}
+
+.icon3 {
+    color: #670067;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.icon {
+    color: black;
+    font-size: 17px;
+}
+
+.icon:hover {
+    color: white;
+}
+
+#bodif {
+    width: 100%;
+}
+
+#cuerpo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    margin: 0 auto;
+    display: block;
+    width: '30%' !important;
+}
+
+#cuerpoTabla {
+    width: 90%;
+    margin: 0 auto;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.itemsTabla {
+    text-align: center;
+}
+
+.dropItems {
+    width: 90%;
+    text-align: 'center';
+    max-height: 300px;
+    overflow-y: auto;
+}
