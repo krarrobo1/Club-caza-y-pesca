@@ -1,5 +1,5 @@
 const path = require('path');
-
+const Dotenv = require('dotenv-webpack');
 
 var config = {
   entry:'./main.js',
@@ -12,7 +12,6 @@ var config = {
     port: 8080,
     historyApiFallback: true
   },
-
   module:{
     rules:[
       {
@@ -65,7 +64,10 @@ var config = {
         ]
       },
     ]
-  }
+  },
+  plugins: [
+    new Dotenv()
+  ]
 };
 
 module.exports = config;

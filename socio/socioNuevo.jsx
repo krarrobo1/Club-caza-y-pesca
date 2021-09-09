@@ -254,7 +254,7 @@ class SocioNuevo extends React.Component{
         console.log(this.state.objeto.getAll('name'));
         if (window.localStorage.getItem('via')) {
             request
-                .put('http://clubcptloja.com/api/members/' + window.localStorage.getItem('idMiembro'))
+                .put(`${process.env.API_URL}/api/members/` + window.localStorage.getItem('idMiembro'))
                 .set({'Authorization': window.sessionStorage.getItem('token')})
                 .send(this.state.objeto)
                 .then(res => {
@@ -265,7 +265,7 @@ class SocioNuevo extends React.Component{
                 .catch(err => alert('Error al actualizar, revise los datos'));
         } else {
             request
-                .post('http://clubcptloja.com/api/members')
+                .post(`${process.env.API_URL}/api/members`)
                 .set({'Authorization': window.sessionStorage.getItem('token')})
                 .send(this.state.objeto)
                 .then(res => {
@@ -281,7 +281,7 @@ class SocioNuevo extends React.Component{
         if (window.localStorage.getItem('via')) {
             console.log(window.sessionStorage.getItem('idMiembro'));
             request
-                .get('http://clubcptloja.com/api/members/' + window.localStorage.getItem('idMiembro'))
+                .get(`${process.env.API_URL}/api/members/` + window.localStorage.getItem('idMiembro'))
                 .set({'Content-Type':'aplication/json'})
                 .set({'Authorization': window.sessionStorage.getItem('token')})
                 .then(res => {
@@ -320,25 +320,25 @@ class SocioNuevo extends React.Component{
                 });
         }
         request
-         .get('http://clubcptloja.com/api/catalogs/maritalstatuses')
+         .get(`${process.env.API_URL}/api/catalogs/maritalstatuses`)
          .set({'Content-Type':'aplication/json'})
          .then(res => {
              this.setState({estados: res.body.data})
          });
          request
-         .get('http://clubcptloja.com/api/catalogs/categories')
+         .get(`${process.env.API_URL}/api/catalogs/categories`)
          .set({'Content-Type':'aplication/json'})
          .then(res => {
              this.setState({cat: res.body.data})
          });
          request
-         .get('http://clubcptloja.com/api/catalogs/bloodtypes')
+         .get(`${process.env.API_URL}/api/catalogs/bloodtypes`)
          .set({'Content-Type':'aplication/json'})
          .then(res => {
              this.setState({blood: res.body.data})
          });
          request
-         .get('http://clubcptloja.com/api/catalogs/activities')
+         .get(`${process.env.API_URL}/api/catalogs/activities`)
          .set({'Content-Type':'aplication/json'})
          .then(res => {
              this.setState({act: res.body.data})

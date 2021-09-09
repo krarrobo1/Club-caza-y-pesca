@@ -185,7 +185,7 @@ class Carro extends React.Component{
     pagar2() {
         console.log(this.state.pagarDatos);
         request
-            .post('http://clubcptloja.com/api/payments')
+            .post(`${process.env.API_URL}/api/payments`)
             .set({'Authorization': window.sessionStorage.getItem('token')})
             .send(this.state.pagarDatos)
             .then(res => {
@@ -198,7 +198,7 @@ class Carro extends React.Component{
 
     componentDidMount(){
         request
-            .get('http://clubcptloja.com/api/members/' + window.localStorage.getItem('idMiembro'))
+            .get(`${process.env.API_URL}/api/members/` + window.localStorage.getItem('idMiembro'))
             .set({'Content-Type':'aplication/json'})
             .set({'Authorization': window.sessionStorage.getItem('token')})
             .then(res => {
@@ -206,7 +206,7 @@ class Carro extends React.Component{
                 this.setState({fechaInicio: fechaEntrada});
                 document.getElementById('reportePer').innerHTML = 'Reporte de ' + res.body.data.name + ' ' + res.body.data.lastname;
                 request
-                    .get('http://clubcptloja.com/api/payments/' + window.localStorage.getItem('idMiembro'))
+                    .get(`${process.env.API_URL}/api/payments/` + window.localStorage.getItem('idMiembro'))
                     .set({'Content-Type':'aplication/json'})
                     .set({'Authorization': window.sessionStorage.getItem('token')})
                     .then(data => { 
@@ -227,7 +227,7 @@ class Carro extends React.Component{
                         this.setState({mesHoy: fehcaActual.getMonth()});
                         this.setState({anoHoy: fehcaActual.getFullYear()});
                         request
-                            .get('http://clubcptloja.com/api/payments/pending/' + window.localStorage.getItem('idMiembro'))
+                            .get(`${process.env.API_URL}/api/payments/pending/` + window.localStorage.getItem('idMiembro'))
                             .set({'Content-Type':'aplication/json'})
                             .set({'Authorization': window.sessionStorage.getItem('token')})
                             .then(add => {

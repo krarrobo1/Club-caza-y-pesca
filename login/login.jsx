@@ -50,7 +50,7 @@ class Login extends React.Component{
         document.getElementById("emailHelp").setAttribute('hidden', '');
         if (this.state.objecto.password) {
           request
-            .post('http://clubcptloja.com/api/auth/login')
+            .post(`${process.env.API_URL}/api/auth/login`)
             .send(this.state.objecto)
             .then(res => {
               console.log(res);

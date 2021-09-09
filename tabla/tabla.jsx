@@ -147,7 +147,7 @@ class Tabla extends React.Component{
     
     send() {
         request
-            .delete('http://clubcptloja.com/api/members/' + window.localStorage.getItem('idMiembro'))
+            .delete(`${process.env.API_URL}/api/members` + window.localStorage.getItem('idMiembro'))
             .set({'Authorization': window.sessionStorage.getItem('token')})
             .then(res => {
                 console.log(res.body);
@@ -158,7 +158,7 @@ class Tabla extends React.Component{
                                         </td>,
                             })
                 request
-                    .get('http://clubcptloja.com/api/members')
+                    .get(`${process.env.API_URL}/api/members`)
                     .set({'Content-Type':'aplication/json'})
                     .set({'Authorization': window.sessionStorage.getItem('token')})
                     .then(res => {
@@ -202,7 +202,7 @@ class Tabla extends React.Component{
     componentDidMount () {
         window.localStorage.removeItem('via');
         request
-         .get('http://clubcptloja.com/api/members')
+         .get(`${process.env.API_URL}/api/members`)
          .set({'Content-Type':'aplication/json'})
          .set({'Authorization': window.sessionStorage.getItem('token')})
          .then(res => {
