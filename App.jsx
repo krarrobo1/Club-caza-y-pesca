@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Carro from './carro/carro.jsx';
 import SocioNuevo from './socio/socioNuevo.jsx';
 
+require('dotenv').config()
 
 class App extends React.Component{
     constructor(){
